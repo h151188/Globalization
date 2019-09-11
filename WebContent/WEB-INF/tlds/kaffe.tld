@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee--
+    web-jsptaglibrary_2_0.xsd">
+
+	<tlib-version>1.0</tlib-version>
+	<short-name>kaffe</short-name>
+	<uri>kaffe-libs</uri>
+	
+	<tag>
+		<description>Prints copyright-line with roman numbers.</description>
+		<name>printCopyright</name>
+		<tag-class>tags.CopyrightTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>since</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>Prints text with limited given length</description>
+		<name>shorttext</name>
+		<tag-class>tags.ShortTextTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>maxChars</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>
